@@ -26,6 +26,7 @@ export default function Navbar() {
         
       </div>
       <ul>
+        <CustomLink to="/">Inicio</CustomLink>
         <CustomLink to="/alimentos">Alimentos</CustomLink>
         <CustomLink to="/productos">Productos</CustomLink>
         <CustomLink to="/retrato">Retratos</CustomLink>

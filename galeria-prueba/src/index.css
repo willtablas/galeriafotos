@@ -23,7 +23,6 @@ a:hover {
 }
 
 body {
-  
   display: flex;
   place-items: start;
   min-width: 320px;
@@ -66,3 +65,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

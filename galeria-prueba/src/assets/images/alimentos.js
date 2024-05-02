@@ -34,5 +34,15 @@ export const photos = [
       width: 3,
       height: 4
     },
+    {
+      src: "https://res.cloudinary.com/dantiuvn2/image/upload/f_auto,q_auto/v1/willphotos/com08",
+      width: 3,
+      height: 4
+    },
+    {
+      src: "https://res.cloudinary.com/dantiuvn2/image/upload/f_auto,q_auto/v1/willphotos/com09",
+      width: 3,
+      height: 4
+    },
   ];
   

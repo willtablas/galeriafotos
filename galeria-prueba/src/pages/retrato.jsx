@@ -1,9 +1,10 @@
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
+import Footer from "./footer";
 import { useState, useCallback } from "react";
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "../assets/images/retratos"
+import { photos } from "../assets/images/retratos";
 
 const Retrato = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -18,29 +19,29 @@ const Retrato = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
-    return (
-      <>
+  return (
+    <>
       <Navbar />
       <div>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-    </div>
-      </>
-      
-    )
-  };
-  
-  export default Retrato;
+        <Gallery photos={photos} onClick={openLightbox} />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={photos.map((x) => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title,
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Retrato;

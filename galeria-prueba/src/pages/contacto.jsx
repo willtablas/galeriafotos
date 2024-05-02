@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Footer from "./footer"
 
 const Contact = () => {
   return (
@@ -60,6 +61,7 @@ const Contact = () => {
           </fieldset>
         </form>
       </div>
+      <Footer />
     </>
   );
 };

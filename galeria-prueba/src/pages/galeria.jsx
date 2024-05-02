@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import Navbar from "./Navbar"
+import Footer from "./footer"
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -38,6 +39,7 @@ const Galeria = () => {
         ) : null}
       </ModalGateway>
     </div>
+    <Footer />
     </>
   );
 };
